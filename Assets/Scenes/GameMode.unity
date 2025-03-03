@@ -1505,7 +1505,7 @@ MonoBehaviour:
     type: 3}
   numberOfCollectables: 9
   minRadius: 90
-  maxRadius: 140
+  maxRadius: 150
 --- !u!82 &1955205791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2300,10 +2300,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123384394489574536, guid: 51b508c628cb89b45b090d5e81313144,
         type: 3}
+      propertyPath: rollSpeed
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 123384394489574536, guid: 51b508c628cb89b45b090d5e81313144,
+        type: 3}
       propertyPath: yawAction
       value: 
       objectReference: {fileID: -3449285326261904325, guid: 5a9e47b6b7df2574085b208429663347,
         type: 3}
+    - target: {fileID: 123384394489574536, guid: 51b508c628cb89b45b090d5e81313144,
+        type: 3}
+      propertyPath: pitchSpeed
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 123384394489574536, guid: 51b508c628cb89b45b090d5e81313144,
         type: 3}
       propertyPath: throttleAction
@@ -2370,6 +2380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015826406269478937, guid: 51b508c628cb89b45b090d5e81313144,
+        type: 3}
+      propertyPath: zRotation
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 4095938866924129320, guid: 51b508c628cb89b45b090d5e81313144,
         type: 3}

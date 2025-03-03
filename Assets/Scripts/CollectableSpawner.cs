@@ -4,8 +4,8 @@ public class CollectableSpawner : MonoBehaviour
 {
     public GameObject collectablePrefab; // The collectable prefab to spawn
     public int numberOfCollectables = 10; // Number of collectables to spawn
-    public float minRadius = 40f; // Minimum distance from the center
-    public float maxRadius = 100f; // Maximum distance from the center
+    public float minRadius = 90f; // Minimum distance from the center
+    public float maxRadius = 150f; // Maximum distance from the center
 
     void Start()
     {
