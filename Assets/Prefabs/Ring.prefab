@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000015454313, y: -0.70710677, z: 0.000000015454312, w: 0.7071068}
   m_LocalPosition: {x: -0.02, y: 9.24, z: 41.27}
-  m_LocalScale: {x: 899.99994, y: 899.99994, z: 899.99994}
+  m_LocalScale: {x: 949.99994, y: 949.99994, z: 949.99994}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   collectSound: {fileID: 8300000, guid: f6888869aef1e9443bd943f015e0b54c, type: 3}
   shrinkDuration: 1
   spinSpeed: 360
-  heal: 20
+  heal: 10
 --- !u!54 &6743053572643817309
 Rigidbody:
   m_ObjectHideFlags: 0
