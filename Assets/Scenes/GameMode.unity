@@ -2270,6 +2270,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ring
       objectReference: {fileID: 0}
+    - target: {fileID: 5692493554897260747, guid: e88d421de81dccf4b9fc05c2cfcc421e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523938279303608204, guid: e88d421de81dccf4b9fc05c2cfcc421e,
+        type: 3}
+      propertyPath: heal
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

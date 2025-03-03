@@ -31,6 +31,15 @@ public class PlayerHealth : MonoBehaviour
             healthbar.fillAmount = health / 100f;
             WindNoise.Play();
         }
+        if (other.gameObject.CompareTag("Ring"))
+        {
+           if (health < 100) 
+            {
+                health += other.GetComponent<Collectable>().heal;
+                healthbar.fillAmount = health / 100f;
+            }
+            
+        }
     }
 
 }

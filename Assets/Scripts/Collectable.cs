@@ -11,6 +11,7 @@ public class Collectable : MonoBehaviour
     private Transform objectTransform; // Reference to the object's transform
     public float shrinkDuration = 1f; // Duration of the shrinking animation
     public float spinSpeed = 360f; // Spin speed in degrees per second
+    public float heal = 20;
 
     private Vector3 targetPosition; // Final position to zip toward
 
