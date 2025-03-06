@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public float health = 100;
     public Image healthbar;
     public AudioSource WindNoise;
+    public AudioSource DeadNoise;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            DeadNoise.Play();
         }
     }
     private void OnTriggerEnter(Collider other)
