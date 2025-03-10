@@ -1643,6 +1643,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1805031777 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4717355674141242758, guid: 20d5068021e9bd645b4ecc2215548ece,
+    type: 3}
+  m_PrefabInstance: {fileID: 6157204803290304914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846819070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2650af2817cfa2c4386cb0c6d44e539e,
@@ -2687,6 +2693,7 @@ MonoBehaviour:
   healthbar: {fileID: 333895001}
   WindNoise: {fileID: 1129451999}
   DeadNoise: {fileID: 147598799}
+  Explosion: {fileID: 1805031777}
 --- !u!82 &2088478699407301051
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Image healthbar;
     public AudioSource WindNoise;
     public AudioSource DeadNoise;
+    public ParticleSystem Explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            
+            Instantiate(Explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject,1f);
+            Destroy(Explosion, 2f);
             DeadNoise.Play();
         }
     }
