@@ -47,6 +47,11 @@ public class PlayerHealth : MonoBehaviour
             }
             
         }
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            health -= other.GetComponent<Obstacle>().damage;
+            healthbar.fillAmount = health / 100f;
+        }
     }
 
 }
