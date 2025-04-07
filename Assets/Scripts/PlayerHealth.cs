@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+      
     }
 
     // Update is called once per frame
@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         {
             
             Instantiate(Explosion, transform.position, Quaternion.identity);
+            Explosion.Play();
             Destroy(gameObject,1f);
             Destroy(Explosion, 2f);
             DeadNoise.Play();
