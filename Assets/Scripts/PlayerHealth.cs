@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -23,14 +24,20 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            
+
             Instantiate(Explosion, transform.position, Quaternion.identity);
             Explosion.Play();
-            Destroy(gameObject,1f);
-            Destroy(Explosion, 2f);
             DeadNoise.Play();
+            StartCoroutine(LoadScene(1f));
         }
     }
+
+    private IEnumerator LoadScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadSceneAsync(2);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MovingObstacle"))
