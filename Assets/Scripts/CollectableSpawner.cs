@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectableSpawner : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class CollectableSpawner : MonoBehaviour
             Instantiate(collectablePrefab, randomPosition, Quaternion.identity);
         }
     }
+   
 
     Vector3 GenerateRandomPosition()
     {
@@ -33,5 +35,14 @@ public class CollectableSpawner : MonoBehaviour
         float y = height - distance / 2;
         // Assuming y = 0 for ground-level placement
         return new Vector3(x, y, z);
+    }
+
+    void Update()
+    {
+
+        if (numberOfCollectables == 0)
+        {
+            SceneManager.LoadSceneAsync(3);
+        }
     }
 }
